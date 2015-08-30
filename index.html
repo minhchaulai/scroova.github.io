@@ -1,0 +1,174 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>CU Model United Nations</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+		<link rel="stylesheet" type="text/css" href="jquery.fullPage.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="vendors/jquery.easings.min.js"></script>
+        <script type="text/javascript" src="jquery.fullPage.js"></script>
+        <script src="jquery.enllax.min.js"></script>
+        <script type="text/javascript">
+  		  $(document).ready(function() {
+        	$('#fullpage').fullpage();
+   		 });
+		</script>
+        <script type="text/javascript">
+        $(document).ready(function() {
+    setTimeout(function(){
+        $('body').addClass('loaded');
+    }, 3000);
+});
+        </script>
+        <!--<link rel="stylesheet" href="css/normalize.css">-->
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        
+     </head>
+   <div class="wrap">
+       <div id="loader-wrapper">
+           <div id="loader">
+           <img src="img/blue-un-logo-vectorised-hi.png">
+           </div>
+           <div id="loader-background">
+           <img src="img/np%20globe.png">
+           </div>
+           <div class="loader-section section-left"></div>
+           <div class="loader-section section-right"></div>
+       </div>
+        
+       <div class="main-header">
+        	<div class="logo">
+            	<strong><a href="/" title="Model United Nations at CU Boulder"><img src="img/MUN%20logo.png" style="height:149px; width:150px;"></a></strong>
+            </div>
+            <div class="big-menu">    
+           <a href="#menu" id="toggle"><span></span></a>
+<div id="menu">
+  <ul>
+    <li><a href="#home">HOME</a></li>
+    <li><a href="#blog">BLOG</a></li>
+    <li><a href="#about">RESOURCES</a></li>
+    <li><a href="#gallery">GALLERY</a></li>
+    <li><a href="#contact">CONTACT</a></li>
+  </ul>
+    <div class="cover"></div>
+    <span class="followtext">Follow us on:</span>
+    <span class="menuline"></span>
+        <div class="fbicon">
+            <a href="http://www.facebook.com/CUModelUN"><img src="img/F_icon.svg.png" style="width:35px;height:35px;border:0;"></a>
+    </div>
+
+                </div>
+</div>
+
+        </div>
+    </div>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        
+		<div id="fullpage"> 
+        
+    		<div class="section" id="section0">
+                <ul class="cb-slideshow">
+                    <li>
+                        <span>Image 1</span>
+                    </li>
+                    <li>
+                        <span>Image 2</span>
+                    </li>
+                    <li>
+                        <span>Image 3</span>
+                    </li>
+                    <li>
+                        <span>Image 4</span>
+                    </li>
+                    <li>
+                        <span>Image 5</span>
+                    </li>    
+                    <li>
+                        <span>Image 6</span>
+                    </li>
+                    <li>
+                        <span>Image 7</span>
+                    </li>
+                </ul>
+            	<h1 class="header0">We are <span style="color: #4B92DB">Model United Nations</span></h1>
+                <p>At the University of Colorado-Boulder.</p>
+            </div> 
+    		<div class="section" id="section1">
+            	<h1 class="header1">Future leaders</h1>
+                <p>Experience amazing conferences in<span style="color:                    #DB0A5B">Washington D.C.</span>and<span style="color:                      #DB0A5B">New York City.</span></p>
+            </div>
+    		<div class="section" id="section2" data-enllax-ratio="0.7">
+            	<h1 class="header2">Skilled negotiators</h1>
+                <p>Work with amazing people from across the globe.</p>
+            </div>
+            <div class="section" id="section3">
+            	<h1 class="header3">Award winners</h1>
+                <p><span style="color: #F22613">10</span> awards won for outstanding papers and committees.</p>
+            </div>
+            <div class="section" id="section4">
+            <form>
+            	<input type="textbox" name="Email" placeholder="Email" class="form1">
+                <input type="submit" value="Submit" class="submit1">
+            </form>
+            	<h1 class="header4">Find out how to join</h1>
+                <p>Subscribe to our <span style="color: #F9690E">mailing list</span> for up to date news and announcements.</p>
+                <div class="bottom-nav">
+                    <ul class="bottom-menu">
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#about">Resources</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    </ul>
+                    <a href="http://www.foxnews.com/story/2009/08/03/could-earth-be-swallowed-by-dying-sun.html">
+                    <img class="svg logoplug" src="img/dying%20sun.svg">
+                    </a>
+                </div>
+            </div>
+		</div>
+<script>
+    var anchor = document.querySelectorAll('button');
+    
+    [].forEach.call(anchor, function(anchor){
+      var open = false;
+      anchor.onclick = function(event){
+        event.preventDefault();
+        if(!open){
+          this.classList.add('close');
+          open = true;
+        }
+        else{
+          this.classList.remove('close');
+          open = false;
+        }
+      }
+    }); 
+  </script>
+        <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='https://www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
