@@ -45,6 +45,10 @@ textarea {
     padding: .2em 0
 }
 
+#section0 {
+    font-size: 36px;
+}
+
 body,
 html {
     height: 100%;
@@ -59,7 +63,12 @@ body {
     color: #FFF;
     border: 1px solid transparent
 }
-
+.header1 {
+    top: -300px
+}
+.header2 {
+    top: -250px
+}
 .buttons-container {
     margin: 100px auto;
     text-align: center
@@ -170,12 +179,12 @@ svg {
 }
 
 .bottom-menu ul {
-    width: 70%;
-    margin: auto;
+    width: auto;
+    
 }
 
 .bottom-menu {
-    position: absolute;
+    position: ;
     right: 0;
     left: 0;
     margin-right: auto;
