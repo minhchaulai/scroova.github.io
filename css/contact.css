@@ -76,35 +76,6 @@ body {
 .nav-items {
     display: none
 }
-#section1 {
-    background: url(../img/DSC_3320.jpg);
-    background-size: cover
-}
-#section2 {
-    background: url(../img/DSC_5873.JPG);
-    background-size: cover
-}
-#section3 {
-    background: url(../img/DSC_3662.JPG);
-    background-size: cover
-}
-#section4 {
-    background: url(../img/greyback.jpg);
-    background-size: cover
-}
-#section0,
-#section1,
-#section2,
-#section3,
-#section4 {
-    background-position: center
-}
-#section1 p {
-    top: -300px
-}
-#section2 p {
-    top: -250px
-}
 .main-header {
     position: fixed;
     z-index: 100;
