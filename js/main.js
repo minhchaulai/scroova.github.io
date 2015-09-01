@@ -74,3 +74,14 @@ theToggle.onclick = function() {
 
         });
 $(window).enllax();
+
+$(".outline").click(function() {
+    $('html,body').animate({
+        scrollTop: $("#section1").offset().top},
+        'slow');
+});
+$(".chevron").click(function() {
+    $('html,body').animate({
+        scrollTop: $("#section1").offset().top},
+        'slow');
+});
