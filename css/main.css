@@ -665,3 +665,7 @@ li a {
     cursor: pointer;
 }
 
+#section2 h1{
+    position: relative;
+    top: -250px;
+}
