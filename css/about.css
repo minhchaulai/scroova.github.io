@@ -45,21 +45,6 @@ textarea {
     padding: .2em 0
 }
 
-body,
-html {
-    height: 100%;
-    font-size: 24px;
-}
-.body {
-    width: 100%;
-    margin: 0 auto
-}
-body {
-    background-color: #12171A;
-    color: #FFF;
-    border: 1px solid transparent
-}
-
 .buttons-container {
     margin: 100px auto;
     text-align: center
@@ -73,37 +58,13 @@ body {
     top: 15px;
     height: 75px
 }
-.form1 {
-    height: 50px;
-    width: 300px;
-    border: 0;
-    border-radius: 0;
-    padding-right: 50px
-}
-.submit1 {
-    position: relative;
-    top: 1px;
-    left: 1px;
-    height: 52px;
-    width: 100px;
-    border: 3px solid #4B92DB;
-    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-    background-color: #fff;
-    font-size: 16px;
-    color: #4B92DB;
-    margin-left: -105px;
-    z-index: 2
-}
+
 .fbicon,
 .followtext,
 .menuline {
     position: fixed
 }
-.submit1:focus,
-.submit1:hover {
-    background-color: #4B92DB;
-    color: #fff
-}
+
 .followtext {
     bottom: 31px;
     right: 185px;
@@ -127,142 +88,12 @@ body {
     height: 35px;
     width: 35px
 }
-.bottom-menu,
-.bottom-nav,
-svg {
-    position: absolute
-}
-.bottom-nav {
-    right: 0;
-    bottom: 0;
-    height: 110px;
-    width: 100%;
-    background-color: #4b92db;
-}
 
-.bottom-menu ul {
-    width: 70%;
-    margin: auto;
-}
-
-.bottom-menu {
-    position: absolute;
-    right: 0;
-    left: 0;
-    margin-right: auto;
-    margin-left: auto;
-    min-height: 50px;
-    width: 90%;
-}
-.bottom-menu li {
-    display: inline-block;
-    width: 190px;
-    font-size: .9em;
-    font-family: Open Sans, sans-serif;
-}
-.bottom-menu a {
-    width: 200px;
-    text-decoration: none;
-    color: #fff
-}
-.bottom-menu a:focus,
-.bottom-menu a:hover {
-    text-decoration: underline;
-}
-svg {
-    right: 5px;
-    bottom: 2px;
-    height: 100px;
-    width: 100px;
-    z-index: 4
-}
 #loader-wrapper .loader-section.section-right,
 #menu {
     right: 0;
 }
-svg:hover path {
-    fill: #fff;
-}
-.cb-slideshow,
-.cbslideshow:after {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: -12px;
-    z-index: 0
-}
-.cb-slideshow:after {
-    content: '';
-    background: 0 0;
-}
-.cb-slideshow li span {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: -25px;
-    left: 0;
-    color: transparent;
-    background-size: cover;
-    background-position: 50% 50%;
-    background-repeat: none;
-    opacity: 0;
-    z-index: 0;
-    animation: imageAnimation 36s linear infinite 0s;
-}
-h1,
-p {
-    z-index: 3
-}
-.cb-slideshow li:nth-child(1) span {
-    background-image: url(../img/DSC_5966%20edited.jpg)
-}
-.cb-slideshow li:nth-child(2) span {
-    background-image: url(../img/DSC_5887.JPG);
-    animation-delay: 6s
-}
-.cb-slideshow li:nth-child(3) span {
-    background-image: url(../img/DSC_5851.JPG);
-    animation-delay: 12s
-}
-.cb-slideshow li:nth-child(4) span {
-    background-image: url(../img/DSC_5521.jpg);
-    animation-delay: 18s
-}
-.cb-slideshow li:nth-child(5) span {
-    background-image: url(../img/DSC_5875.jpg);
-    animation-delay: 24s
-}
-.cb-slideshow li:nth-child(6) span {
-    background-image: url(../img/DSC_3702.jpg);
-    animation-delay: 30s
-}
-@keyframes imageAnimation {
-    0% {
-        opacity: 0;
-        animation-timing-function: ease-in
-    }
-    8% {
-        opacity: 1;
-        animation-timing-function: ease-out
-    }
-    17% {
-        opacity: 1
-    }
-    100%,
-    25% {
-        opacity: 0
-    }
-}
-.no-cssanimations .cb-slideshow li span {
-    opacity: 1
-}
-h1 {
-    font-family: Open Sans, sans-serif
-}
-p {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 300
-}
+
 #loader-wrapper {
     position: fixed;
     top: 0;
@@ -480,7 +311,7 @@ p {
 #toggle span:before {
     width: 100%;
     height: 5px;
-    background-color: #fff;
+    background-color: #4b92db;
     transition: all .3s;
     backface-visibility: hidden;
     border-radius: 2px
@@ -535,12 +366,20 @@ li a {
     color: #4b92db;
     text-decoration: none;
     transition: all .4s;
-    z-index: 51
+    z-index: 51;
 }
 .big-menu,
 .cover {
     position: fixed;
-    z-index: 51
+    z-index: 5;
+}
+.cover {
+    top: 0;
+    right: 375px;
+    min-height: 100%;
+    width: 100%;
+    background-color: #000;
+    opacity: .75;
 }
 #menu li a:focus,
 #menu li a:hover {
@@ -551,22 +390,13 @@ li a {
 }
 .big-menu {
     top: -5px;
-    right: 15px
+    right: 15px;
+    font-size: 24px;
+    z-index: 51;
 }
-.cover {
-    top: 0;
-    right: 394px;
-    min-height: 100%;
-    width: 100%;
-    background-color: #000;
-    opacity: .75
-}
-
 #menu,
 .section {
     text-align: center
 }
-/*====================Non generic css here========================*/
 
-body {
-    background-image: url(../img/UN_General_Assembly_bldg_flags.jpg)
+/*====================Non generic css here========================*/
