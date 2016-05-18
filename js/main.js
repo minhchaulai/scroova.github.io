@@ -73,7 +73,7 @@ theToggle.onclick = function() {
             }, 'xml');
 
         });
-$(window).enllax();
+/*$(window).enllax();*/
 
 $(".outline").click(function() {
     $('html,body').animate({
@@ -81,7 +81,42 @@ $(".outline").click(function() {
         'slow');
 });
 $(".chevron").click(function() {
-    $('html,body').animate({
+     $.fn.fullpage.moveSectionDown();
+});
+    /*$('html,body').animate({
         scrollTop: $("#section1").offset().top},
-        'slow');
+        'slow');*/
+
+$(".citybutton1").click(function() {
+    $('.cityp2').fadeOut(333);
+    $('.cityp2').animate({top: '40%'});
+    $('.cityp1').delay(333).fadeIn(333);
+    $('.citybutton1').addClass("citypon");
+    $('.citybutton2').removeClass('citypon');
+});
+$(".citybutton2").click(function() {
+    $('.cityp1').fadeOut(333);
+    $('.cityp1').animate({top:'40%'});
+    $('.cityp2').delay(333).fadeIn(333);
+    $('.citybutton2').addClass("citypon");
+    $('.citybutton1').removeClass('citypon');
+});
+$(".citybutton1").click(function() {
+    $('.nycpalette').removeClass('cityon');
+});
+$(".citybutton2").click(function() {
+ $('.nycpalette').addClass("cityon");
+});
+$(window).load(function() {
+    $('.cityp1').animate({top:'40%'});
+    $('.cityp2').animate({top:'40%'});
+    $('.cityp1').fadeIn(100);
+    $('.cityp2').fadeOut(100);
+});
+$(window).scroll(function() {
+    if ($(document).scrollTop()> 500) {
+        $('#toggle span').addClass('blue');
+    } else {
+        $('#toggle').addClass('white');
+    }
 });

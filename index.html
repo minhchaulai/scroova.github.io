@@ -14,21 +14,13 @@
         <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script src="vendors/jquery.easings.min.js"></script>
-        <script type="text/javascript" src="jquery.fullPage.min.js"></script>
+        <script type="text/javascript" src="jquery.fullPage.js"></script>
         <script src="jquery.enllax.min.js"></script>
         <script type="text/javascript">
   		  $(document).ready(function() {
         	$('#fullpage').fullpage();
    		 });
 		</script>
-        <!--<script type="text/javascript">
-        $(document).ready(function() {
-    setTimeout(function(){
-        $('body').addClass('loaded');
-    }, 3000);
-});
-        </script>-->
-        <!--<link rel="stylesheet" href="css/normalize.css">-->
         <script type="text/javascript">
             $(window).load(function() {
                 $('body').addClass('loaded');
@@ -87,6 +79,7 @@
         
     		<div class="section" id="section0">
                 <div class="filter"></div>
+                <div class="filter2"></div>
                 <ul class="cb-slideshow">
                     <li>
                         <span>Image 1</span>
@@ -110,15 +103,32 @@
                         <span>Image 7</span>
                     </li>
                 </ul>
-            	<h1 class="header0">We are Model United Nations</h1>
-                <p>At the University of Colorado-Boulder.</p>
+                <p class="small">WE ARE</p>
+            	<h1 class="header0">MODEL UNITED NATIONS</h1>
+                <p class="small2">At the University of Colorado Boulder</p>
                 <div class="scroll-indicator">
                     <div class="chevron"></div>
                 </div>
             </div> 
     		<div class="section" id="section1">
-            	<h1 class="header1">Future leaders</h1>
-                <p>Experience amazing conferences in <span style="color:                    #DB0A5B">Washington D.C. </span>and <span style="color:                      #DB0A5B">New York City.</span></p>
+                <div class="leftfill">
+                <h1 class="header1">FUTURE LEADERS</h1>
+                <p class="paragraph1">Experience <span style="font-weight: bold">two</span> amazing conferences.</p>
+                </div>
+                <div class="descriptions">
+                    <ul class="citytoggle">
+                    <li class="citybutton1 citypon">WASHINGTON, D.C.</li>
+                    <li class="citybutton2">NEW YORK CITY</li>
+                    </ul>
+                    <div class="coverup"></div>
+                    <p class="cityp1 citydon">Held in the fall, the Washington, D.C. conference hosts over 800 students. Engineered to be a beginner's conference, Washington, D.C. is a great way for beginners to gain their footing and veterans to continue to hone their skills.</p>
+                    <p class="cityp2">Held in the spring, the New York City conference is substantially larger than D.C., hosting over 5000 students from across the world. The most competitive conference, NYC is a chance for delegates to really test their skills.</p>
+                </div>
+                <div class="dcpalette"></div>
+                <div class="nycpalette"></div>
+                  <div class="scroll-indicator indicator2">
+                    <div class="chevron"></div>
+                </div>
             </div>
     		<div class="section" id="section2" data-enllax-ratio=".79">
             	<h1>Skilled negotiators</h1>
